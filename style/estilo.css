@@ -51,10 +51,12 @@ img {
   height: 300px;
   
 }
+#foco-rigth {
+  height: 100vh;
+  background-color: #0e0e0e6e;
+}
 
-
-
-#lado-right {
+#lado-rigth {
   background-image: url(../Uaufotos/ponte.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -67,20 +69,31 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
+
   a {
     font-size: .9em;
-    margin: 0px 20px;
+    margin: 0px 15px;
     text-decoration: none;
-    padding: 20px;
-    color: bisque;
+    padding: 15px;
+    color: #ffffff;
   }
 
   a:hover{
     border-radius: 10px;
-    background-color: rgba(250, 235, 215, 0.166);
-    color: cyan;
+    background-color: #faebd72a;
+    color: #00ffff;
   }
 }
-div#textox {
+div#texto {
   color: #fff;
+  h1{
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  p{
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    text-indent: 20px;
+  }
 }
