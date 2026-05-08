@@ -1,0 +1,86 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  background: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+
+div#bac-logo {
+  width: 45vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.845);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#lado-left{
+  
+
+  background-image: url(../Uaufotos/dia.jpg);
+  background-size: contain;
+  background-position: center top;
+  width:45vw;
+  height: 100vh;
+
+}
+
+img {
+
+  width: 300px;
+  height: 300px;
+  
+}
+
+
+
+#lado-right {
+  background-image: url(../Uaufotos/ponte.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  width: 55vw;
+  height: 100vh;
+}
+
+menu {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-size: .9em;
+    margin: 0px 20px;
+    text-decoration: none;
+    padding: 20px;
+    color: bisque;
+  }
+
+  a:hover{
+    border-radius: 10px;
+    background-color: rgba(250, 235, 215, 0.166);
+    color: cyan;
+  }
+}
+div#textox {
+  color: #fff;
+}
