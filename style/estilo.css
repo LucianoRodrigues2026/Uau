@@ -54,6 +54,7 @@ img {
 #foco-rigth {
   height: 100vh;
   background-color: #0e0e0e6e;
+  position: relative;
 }
 
 #lado-rigth {
@@ -86,14 +87,49 @@ menu {
 }
 div#texto {
   color: #fff;
+  position: absolute;
+  left: 25px;
+  top: 250px;
   h1{
+    margin: 10px;
     font-weight: 300;
     font-family: 'Courier New', Courier, monospace;
   }
   p{
+    margin: 10px;
     font-weight: 200;
     font-family: 'Courier New', Courier, monospace;
     width: 500px;
     text-indent: 20px;
   }
+}
+.redes {
+  position: absolute;
+  left: 570px;
+  top: 600px;
+  float: right;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.github {
+  background-image: url(../Uaufotos/3291667.png);
+  background-size: contain;
+  background-color: purple;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.instagram {
+  background-image: url(../Uaufotos/insta.png);
+  background-size: cover;
+  margin: 10px;
+  background-color: rgb(8, 84, 214);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.nome  {
+  text-align: center;
+  color: #ffffff;
 }
