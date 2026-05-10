@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cadrasto_UaU</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: darkcyan;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+    }
+    main {
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.627);
+      margin-top: 50px;
+      padding: 10px;;
+      background-color: #fff;
+      width: 500px;
+      height: 600px;
+      border-radius: 20px;
+
+    }
+    fieldset {
+      padding: 10px;
+    }
+
+    .senha{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+    input {
+      padding: 5px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <form action="cadrasto.js" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>E-mail</legend>
+        <input type="email" name="email" id="Email" placeholder="E-mail" autocomplete="email" required >
+      </fieldset>
+
+      <fieldset class="senha">
+        <legend>Senha</legend>
+        <input type="password" name="senha" id="Senha" placeholder="senha" required>
+        <input type="password" name="senha1" id="Senha1"placeholder="confirme a senha" required>
+      </fieldset>
+
+      <input type="submit" value="cadrastar">
+      <input type="reset" value="linpar">
+    </form>
+
+  </main>
+  
+</body>
+</html>
