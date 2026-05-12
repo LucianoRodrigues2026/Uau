@@ -119,8 +119,8 @@ div#texto {
   }
 }
 .redes {
-  grid-row-start: 13;
-  grid-row-end: 15;
+  grid-row-start: 14;
+  grid-row-end: 16;
   grid-column-start: 1;
   grid-column-end: 3;
 
