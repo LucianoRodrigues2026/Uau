@@ -54,7 +54,9 @@ img {
 #foco-rigth {
   height: 100vh;
   background-color: #0e0e0e6e;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(15,50px);
 }
 
 #lado-rigth {
@@ -66,6 +68,11 @@ img {
 }
 
 menu {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -87,10 +94,17 @@ menu {
   }
 }
 div#texto {
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.549);
+  grid-row-start: 4;
+  grid-row-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  justify-self: start;
+  align-self: center;
   color: #fff;
-  position: absolute;
-  left: 25px;
-  top: 250px;
   h1{
     margin: 10px;
     font-weight: 300;
@@ -105,12 +119,17 @@ div#texto {
   }
 }
 .redes {
-  position: absolute;
-  left: 570px;
-  top: 600px;
-  float: right;
+  grid-row-start: 13;
+  grid-row-end: 15;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  justify-self: end;
+  align-self: center;
+
   display: grid;
   grid-template-columns: auto auto;
+  
 }
 .github {
   cursor: pointer;
